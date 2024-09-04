@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+.sticker {
+    min-height: 200px;
+    background-color: rgb(37, 39, 39);
+    min-width: 210px;
+    position: absolute;
+    /* border-top: 20px solid  #ff8800; */
+    border-radius: 6px;
+    left: 20px;
+    top: 70px;
+    padding: 10px;
+    color: #eee;
+    
+    
+    
+
+
+}
+
+#container{
+
+    height: 100vh;
+    width: 100vw;
+     position: absolute;
+    
+}
+
+form{
+    background-color: white;
+    width: max-content;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+form input{
+    width: 25px;
+    height: 25px;
+
+
+}
+input[type=color]::-webkit-color-swatch-wrapper{
+    
+    background-color: white;
+    padding: 0;
+    
+    border: none;  
+    
+    
+}
+input::-webkit-color-swatch {
+    border-radius: 50%; 
+    border: none;
+    
+}
+input[type=color]:hover{
+    cursor:pointer;
+}
+
+
+
+button{
+    height: 25px;
+    width: 25px;
+    background:none;
+    border-radius: 100%;
+    border: none;
+}
+button:hover{
+    transform:scale(90%);
+    cursor: pointer;
+}
+
+
+
+* {
+    font-family:poppins;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+
+}
+/* .stic{
+    /* position: relative; *
+    background-color: aqua;
+    width: max-content;
+}
+
+
+#close{
+
+    /* position: absolute; 
+    left: 236px;
+    top: 72px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+ */

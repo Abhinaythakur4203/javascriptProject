@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Application</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <script src="script.js">  </script>
+
+    <div class="back"></div>
+    <header>
+        <div class="otherData">
+            <img src="" id="weatherImage" alt="image">
+
+            <span id="humidity"></span>
+            <span id="windSpeed"></span>
+            <!-- <span class="weather-condition"></span> -->
+
+        </div>
+
+        <form  onsubmit="submitEvent(event)">
+            <input type="text" id="input" placeholder="Enter city name">
+            <button type="submit">Get Weather</button>
+          </form>
+
+    </header>
+    <main>
+        <div class="data">
+            <span id="temperature"></span>
+            <span id="cityName"></span>
+            <span id="weather-condition"></span>
+
+
+        </div>
+    </main>
+</body>
+
+</html>

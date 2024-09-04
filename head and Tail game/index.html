@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head-and-Tail</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+    }
+    .loader {
+        width: 20px;
+        padding: 10px;
+        aspect-ratio: 4;
+        background: radial-gradient(circle closest-side, #7cc022 90%, #0000) 0/calc(100%/3) 100% space;
+        clip-path: inset(0 100% 0 0);
+        animation: l1 1s steps(4) infinite;
+        margin-top: 300px;
+        position: relative;
+
+    }
+
+    @keyframes l1 {
+        to {
+            clip-path: inset(0 -34% 0 0)
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        
+
+    }
+
+    .textResult{
+        margin-top: 300px;
+        position: relative;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        
+        
+    }
+
+
+
+    .btn {
+       
+        background-color: rgba(11, 122, 67, 0.904);
+        
+        font-weight: 700;
+        
+        color: white;
+        padding: 5px 12px;
+        
+        
+
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        transition: ease-out;
+        background-color: rgba(26, 148, 87, 0.904);
+
+    }
+</style>
+
+<body>
+    <script src="head.js"></script>
+    <div class="container">
+        <div class="loader"></div>
+
+        <h1 class="textResult">Click Toss Button</h1>
+        <div>
+            <button class="btn" onclick="resultOfToos()">Toss</button>
+        </div>
+    </div>
+
+    <script>
+        let textResult = document.querySelector(".textResult");
+        let btn = document.body.querySelector(".btn");
+        let div = document.createElement("div");
+        let loader = document.querySelector(".loader");
+
+
+        loader.style.display = "none"
+        
+        async  function resultOfToos() {
+            const rand = Math.round(Math.random());
+            textResult.style.display = "none"
+            loader.style.display = "flex"
+            
+            await setTimeout(() => {
+                loader.style.display = "none"
+
+                textResult.style.display = "flex"
+                
+                // textResult.innerText = loader.style.display = "block"
+                
+            }, 2000)
+            if (rand == 1)
+                textResult.innerText = "Head!"
+    
+            else
+                textResult.innerText = "Tails!"
+        }
+        
+
+    </script>
+</body>
+
+</html>
