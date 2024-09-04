@@ -1,2 +1,2 @@
 <h1>Hi This Abhinay!</h1><br>
-This are the js project that a begginer should build to know more about JavaScript
+<i>This are the basic js project that a begginers should build which will help you know more about JavaScript</i>
